@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DF76E9A2620566600C062C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E992620566600C062C1 /* AppDelegate.swift */; };
+		5DF76E9C2620566600C062C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9B2620566600C062C1 /* SceneDelegate.swift */; };
+		5DF76E9E2620566600C062C1 /* OnboardAddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */; };
+		5DF76EA32620566800C062C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF76EA22620566800C062C1 /* Assets.xcassets */; };
+		5DF76EA62620566800C062C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF76EA42620566800C062C1 /* LaunchScreen.storyboard */; };
+		5DF76EB12620566800C062C1 /* AttainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EB02620566800C062C1 /* AttainTests.swift */; };
+		5DF76EBC2620566800C062C1 /* AttainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EBB2620566800C062C1 /* AttainUITests.swift */; };
+		5DF76ED3262062CB00C062C1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76ED2262062CB00C062C1 /* Extensions.swift */; };
+		5DF76ED826206AAD00C062C1 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76ED726206AAD00C062C1 /* ViewUtils.swift */; };
+		5DF76EDD26206B0400C062C1 /* OnboardLoanTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EDC26206B0400C062C1 /* OnboardLoanTypeViewController.swift */; };
+		5DF76EE226206E9100C062C1 /* OnboardAddLoansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EE126206E9100C062C1 /* OnboardAddLoansViewController.swift */; };
+		5DF76EEA2620730000C062C1 /* AddLoansCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EE92620730000C062C1 /* AddLoansCollectionView.swift */; };
+		5DF76EEF262075BF00C062C1 /* AddLoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EEE262075BF00C062C1 /* AddLoanCell.swift */; };
+		5DF76EFD26207F7800C062C1 /* OnboardSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76EFC26207F7800C062C1 /* OnboardSettingsViewController.swift */; };
+		5DF76F022623B64900C062C1 /* PlaidExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F012623B64900C062C1 /* PlaidExtension.swift */; };
+		5DF76F072623B67800C062C1 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F062623B67800C062C1 /* NetworkRequests.swift */; };
+		5DF76F232623C8E500C062C1 /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F222623C8E500C062C1 /* BankAccountView.swift */; };
+		5DF76F2826248E2E00C062C1 /* JsonClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F2726248E2E00C062C1 /* JsonClasses.swift */; };
+		5DF76F2D262493A300C062C1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F2C262493A300C062C1 /* UserData.swift */; };
+		5DF76F322624CAFB00C062C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F312624CAFB00C062C1 /* MainViewController.swift */; };
+		5DF76F372626688F00C062C1 /* LiabilitiesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */; };
+		5DF76F442626D04700C062C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F432626D04700C062C1 /* BaseViewController.swift */; };
+		88634F049ED50CC248A9C267 /* Pods_Attain_AttainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74FEC86A2A8E0AAC5BC3652 /* Pods_Attain_AttainUITests.framework */; };
+		8B810E4105D838224F0E049A /* Pods_Attain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C903686A61C7C2B170ADDDA /* Pods_Attain.framework */; };
+		C96516DCDDF2804995E4EF1E /* Pods_AttainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F999D0F5A55E7A653F6BD6 /* Pods_AttainTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DF76EAD2620566800C062C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF76E8E2620566600C062C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF76E952620566600C062C1;
+			remoteInfo = Attain;
+		};
+		5DF76EB82620566800C062C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF76E8E2620566600C062C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF76E952620566600C062C1;
+			remoteInfo = Attain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10AC1363B98E081E4464362D /* Pods-AttainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttainTests.debug.xcconfig"; path = "Target Support Files/Pods-AttainTests/Pods-AttainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10E30FC3B1FE53BDCC9D9E12 /* Pods-Attain-AttainUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain-AttainUITests.debug.xcconfig"; path = "Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2456B65CF3B6CF4F17A10B3D /* Pods-AttainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttainTests.release.xcconfig"; path = "Target Support Files/Pods-AttainTests/Pods-AttainTests.release.xcconfig"; sourceTree = "<group>"; };
+		28C08026272E138A06F80801 /* Pods-Attain-AttainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain-AttainUITests.release.xcconfig"; path = "Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47C4588B3BC6F8AACB11F0F8 /* Pods-Attain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain.debug.xcconfig"; path = "Target Support Files/Pods-Attain/Pods-Attain.debug.xcconfig"; sourceTree = "<group>"; };
+		5DF76E962620566600C062C1 /* Attain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF76E992620566600C062C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DF76E9B2620566600C062C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardAddAccountViewController.swift; sourceTree = "<group>"; };
+		5DF76EA22620566800C062C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF76EA52620566800C062C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DF76EA72620566800C062C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF76EAC2620566800C062C1 /* AttainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF76EB02620566800C062C1 /* AttainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttainTests.swift; sourceTree = "<group>"; };
+		5DF76EB22620566800C062C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF76EB72620566800C062C1 /* AttainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF76EBB2620566800C062C1 /* AttainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttainUITests.swift; sourceTree = "<group>"; };
+		5DF76EBD2620566800C062C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF76ED2262062CB00C062C1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5DF76ED726206AAD00C062C1 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		5DF76EDC26206B0400C062C1 /* OnboardLoanTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardLoanTypeViewController.swift; sourceTree = "<group>"; };
+		5DF76EE126206E9100C062C1 /* OnboardAddLoansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardAddLoansViewController.swift; sourceTree = "<group>"; };
+		5DF76EE92620730000C062C1 /* AddLoansCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoansCollectionView.swift; sourceTree = "<group>"; };
+		5DF76EEE262075BF00C062C1 /* AddLoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanCell.swift; sourceTree = "<group>"; };
+		5DF76EFC26207F7800C062C1 /* OnboardSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSettingsViewController.swift; sourceTree = "<group>"; };
+		5DF76F012623B64900C062C1 /* PlaidExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidExtension.swift; sourceTree = "<group>"; };
+		5DF76F062623B67800C062C1 /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		5DF76F222623C8E500C062C1 /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
+		5DF76F2726248E2E00C062C1 /* JsonClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonClasses.swift; sourceTree = "<group>"; };
+		5DF76F2C262493A300C062C1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		5DF76F312624CAFB00C062C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilitiesWebViewController.swift; sourceTree = "<group>"; };
+		5DF76F432626D04700C062C1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9C903686A61C7C2B170ADDDA /* Pods_Attain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB908EAA9E53052C4BF0F07F /* Pods-Attain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain.release.xcconfig"; path = "Target Support Files/Pods-Attain/Pods-Attain.release.xcconfig"; sourceTree = "<group>"; };
+		E74FEC86A2A8E0AAC5BC3652 /* Pods_Attain_AttainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attain_AttainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F999D0F5A55E7A653F6BD6 /* Pods_AttainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DF76E932620566600C062C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B810E4105D838224F0E049A /* Pods_Attain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EA92620566800C062C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96516DCDDF2804995E4EF1E /* Pods_AttainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EB42620566800C062C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88634F049ED50CC248A9C267 /* Pods_Attain_AttainUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF76E8D2620566600C062C1 = {
+			isa = PBXGroup;
+			children = (
+				5DF76E982620566600C062C1 /* Attain */,
+				5DF76EAF2620566800C062C1 /* AttainTests */,
+				5DF76EBA2620566800C062C1 /* AttainUITests */,
+				5DF76E972620566600C062C1 /* Products */,
+				6935D1B4327153A0CB557BAA /* Pods */,
+				FFAF947DFF96F531A16E7C82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF76E972620566600C062C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76E962620566600C062C1 /* Attain.app */,
+				5DF76EAC2620566800C062C1 /* AttainTests.xctest */,
+				5DF76EB72620566800C062C1 /* AttainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF76E982620566600C062C1 /* Attain */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76E992620566600C062C1 /* AppDelegate.swift */,
+				5DF76E9B2620566600C062C1 /* SceneDelegate.swift */,
+				5DF76F482628F1F200C062C1 /* Onboard */,
+				5DF76F502628F23900C062C1 /* Main */,
+				5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */,
+				5DF76F512628F24600C062C1 /* Data */,
+				5DF76F2726248E2E00C062C1 /* JsonClasses.swift */,
+				5DF76F522628F25E00C062C1 /* Extensions */,
+				5DF76F432626D04700C062C1 /* BaseViewController.swift */,
+				5DF76F062623B67800C062C1 /* NetworkRequests.swift */,
+				5DF76EA22620566800C062C1 /* Assets.xcassets */,
+				5DF76EA42620566800C062C1 /* LaunchScreen.storyboard */,
+				5DF76EA72620566800C062C1 /* Info.plist */,
+			);
+			path = Attain;
+			sourceTree = "<group>";
+		};
+		5DF76EAF2620566800C062C1 /* AttainTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76EB02620566800C062C1 /* AttainTests.swift */,
+				5DF76EB22620566800C062C1 /* Info.plist */,
+			);
+			path = AttainTests;
+			sourceTree = "<group>";
+		};
+		5DF76EBA2620566800C062C1 /* AttainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76EBB2620566800C062C1 /* AttainUITests.swift */,
+				5DF76EBD2620566800C062C1 /* Info.plist */,
+			);
+			path = AttainUITests;
+			sourceTree = "<group>";
+		};
+		5DF76F482628F1F200C062C1 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76F492628F20900C062C1 /* Views */,
+				5DF76EDC26206B0400C062C1 /* OnboardLoanTypeViewController.swift */,
+				5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */,
+				5DF76EFC26207F7800C062C1 /* OnboardSettingsViewController.swift */,
+				5DF76EE126206E9100C062C1 /* OnboardAddLoansViewController.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		5DF76F492628F20900C062C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76F222623C8E500C062C1 /* BankAccountView.swift */,
+				5DF76EE92620730000C062C1 /* AddLoansCollectionView.swift */,
+				5DF76EEE262075BF00C062C1 /* AddLoanCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DF76F502628F23900C062C1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76F312624CAFB00C062C1 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5DF76F512628F24600C062C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76F2C262493A300C062C1 /* UserData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5DF76F522628F25E00C062C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5DF76F012623B64900C062C1 /* PlaidExtension.swift */,
+				5DF76ED726206AAD00C062C1 /* ViewUtils.swift */,
+				5DF76ED2262062CB00C062C1 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6935D1B4327153A0CB557BAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47C4588B3BC6F8AACB11F0F8 /* Pods-Attain.debug.xcconfig */,
+				CB908EAA9E53052C4BF0F07F /* Pods-Attain.release.xcconfig */,
+				10E30FC3B1FE53BDCC9D9E12 /* Pods-Attain-AttainUITests.debug.xcconfig */,
+				28C08026272E138A06F80801 /* Pods-Attain-AttainUITests.release.xcconfig */,
+				10AC1363B98E081E4464362D /* Pods-AttainTests.debug.xcconfig */,
+				2456B65CF3B6CF4F17A10B3D /* Pods-AttainTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFAF947DFF96F531A16E7C82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C903686A61C7C2B170ADDDA /* Pods_Attain.framework */,
+				E74FEC86A2A8E0AAC5BC3652 /* Pods_Attain_AttainUITests.framework */,
+				F1F999D0F5A55E7A653F6BD6 /* Pods_AttainTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DF76E952620566600C062C1 /* Attain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF76EC02620566800C062C1 /* Build configuration list for PBXNativeTarget "Attain" */;
+			buildPhases = (
+				50F6E9F6756D94903D25EBF0 /* [CP] Check Pods Manifest.lock */,
+				5DF76E922620566600C062C1 /* Sources */,
+				5DF76E932620566600C062C1 /* Frameworks */,
+				5DF76E942620566600C062C1 /* Resources */,
+				9A32F0CAA5D1906DFD674365 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Attain;
+			productName = Attain;
+			productReference = 5DF76E962620566600C062C1 /* Attain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DF76EAB2620566800C062C1 /* AttainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF76EC32620566800C062C1 /* Build configuration list for PBXNativeTarget "AttainTests" */;
+			buildPhases = (
+				30E59AF256D5EA2D96C41920 /* [CP] Check Pods Manifest.lock */,
+				5DF76EA82620566800C062C1 /* Sources */,
+				5DF76EA92620566800C062C1 /* Frameworks */,
+				5DF76EAA2620566800C062C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF76EAE2620566800C062C1 /* PBXTargetDependency */,
+			);
+			name = AttainTests;
+			productName = AttainTests;
+			productReference = 5DF76EAC2620566800C062C1 /* AttainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DF76EB62620566800C062C1 /* AttainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF76EC62620566800C062C1 /* Build configuration list for PBXNativeTarget "AttainUITests" */;
+			buildPhases = (
+				DD10D4D3DFA94B474D24B413 /* [CP] Check Pods Manifest.lock */,
+				5DF76EB32620566800C062C1 /* Sources */,
+				5DF76EB42620566800C062C1 /* Frameworks */,
+				5DF76EB52620566800C062C1 /* Resources */,
+				6CC057FB5E8410558C47DE94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF76EB92620566800C062C1 /* PBXTargetDependency */,
+			);
+			name = AttainUITests;
+			productName = AttainUITests;
+			productReference = 5DF76EB72620566800C062C1 /* AttainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF76E8E2620566600C062C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5DF76E952620566600C062C1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5DF76EAB2620566800C062C1 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5DF76E952620566600C062C1;
+					};
+					5DF76EB62620566800C062C1 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5DF76E952620566600C062C1;
+					};
+				};
+			};
+			buildConfigurationList = 5DF76E912620566600C062C1 /* Build configuration list for PBXProject "Attain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF76E8D2620566600C062C1;
+			productRefGroup = 5DF76E972620566600C062C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF76E952620566600C062C1 /* Attain */,
+				5DF76EAB2620566800C062C1 /* AttainTests */,
+				5DF76EB62620566800C062C1 /* AttainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DF76E942620566600C062C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF76EA62620566800C062C1 /* LaunchScreen.storyboard in Resources */,
+				5DF76EA32620566800C062C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EAA2620566800C062C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EB52620566800C062C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30E59AF256D5EA2D96C41920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AttainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F6E9F6756D94903D25EBF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC057FB5E8410558C47DE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A32F0CAA5D1906DFD674365 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attain/Pods-Attain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attain/Pods-Attain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attain/Pods-Attain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD10D4D3DFA94B474D24B413 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attain-AttainUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DF76E922620566600C062C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF76F232623C8E500C062C1 /* BankAccountView.swift in Sources */,
+				5DF76E9E2620566600C062C1 /* OnboardAddAccountViewController.swift in Sources */,
+				5DF76F2D262493A300C062C1 /* UserData.swift in Sources */,
+				5DF76EEF262075BF00C062C1 /* AddLoanCell.swift in Sources */,
+				5DF76F442626D04700C062C1 /* BaseViewController.swift in Sources */,
+				5DF76F072623B67800C062C1 /* NetworkRequests.swift in Sources */,
+				5DF76F022623B64900C062C1 /* PlaidExtension.swift in Sources */,
+				5DF76ED826206AAD00C062C1 /* ViewUtils.swift in Sources */,
+				5DF76F372626688F00C062C1 /* LiabilitiesWebViewController.swift in Sources */,
+				5DF76F322624CAFB00C062C1 /* MainViewController.swift in Sources */,
+				5DF76EE226206E9100C062C1 /* OnboardAddLoansViewController.swift in Sources */,
+				5DF76E9A2620566600C062C1 /* AppDelegate.swift in Sources */,
+				5DF76EFD26207F7800C062C1 /* OnboardSettingsViewController.swift in Sources */,
+				5DF76EEA2620730000C062C1 /* AddLoansCollectionView.swift in Sources */,
+				5DF76F2826248E2E00C062C1 /* JsonClasses.swift in Sources */,
+				5DF76E9C2620566600C062C1 /* SceneDelegate.swift in Sources */,
+				5DF76ED3262062CB00C062C1 /* Extensions.swift in Sources */,
+				5DF76EDD26206B0400C062C1 /* OnboardLoanTypeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EA82620566800C062C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF76EB12620566800C062C1 /* AttainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF76EB32620566800C062C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF76EBC2620566800C062C1 /* AttainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DF76EAE2620566800C062C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF76E952620566600C062C1 /* Attain */;
+			targetProxy = 5DF76EAD2620566800C062C1 /* PBXContainerItemProxy */;
+		};
+		5DF76EB92620566800C062C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF76E952620566600C062C1 /* Attain */;
+			targetProxy = 5DF76EB82620566800C062C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DF76EA42620566800C062C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF76EA52620566800C062C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DF76EBE2620566800C062C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DF76EBF2620566800C062C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DF76EC12620566800C062C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C4588B3BC6F8AACB11F0F8 /* Pods-Attain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = Attain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.Attain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF76EC22620566800C062C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB908EAA9E53052C4BF0F07F /* Pods-Attain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = Attain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.Attain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DF76EC42620566800C062C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AC1363B98E081E4464362D /* Pods-AttainTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = AttainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.AttainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Attain.app/Attain";
+			};
+			name = Debug;
+		};
+		5DF76EC52620566800C062C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2456B65CF3B6CF4F17A10B3D /* Pods-AttainTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = AttainTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.AttainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Attain.app/Attain";
+			};
+			name = Release;
+		};
+		5DF76EC72620566800C062C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E30FC3B1FE53BDCC9D9E12 /* Pods-Attain-AttainUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = AttainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.AttainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Attain;
+			};
+			name = Debug;
+		};
+		5DF76EC82620566800C062C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C08026272E138A06F80801 /* Pods-Attain-AttainUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TD6K89778;
+				INFOPLIST_FILE = AttainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.AttainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Attain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DF76E912620566600C062C1 /* Build configuration list for PBXProject "Attain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF76EBE2620566800C062C1 /* Debug */,
+				5DF76EBF2620566800C062C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF76EC02620566800C062C1 /* Build configuration list for PBXNativeTarget "Attain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF76EC12620566800C062C1 /* Debug */,
+				5DF76EC22620566800C062C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF76EC32620566800C062C1 /* Build configuration list for PBXNativeTarget "AttainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF76EC42620566800C062C1 /* Debug */,
+				5DF76EC52620566800C062C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF76EC62620566800C062C1 /* Build configuration list for PBXNativeTarget "AttainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF76EC72620566800C062C1 /* Debug */,
+				5DF76EC82620566800C062C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DF76E8E2620566600C062C1 /* Project object */;
+}
