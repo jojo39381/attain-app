@@ -59,7 +59,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         label.font = UIFont(name: "Avenir", size: 25)
         label.numberOfLines = 0
         label.textColor = .black
-        label.text = "Hello, Joseph"
+        label.text = "Hello \(UserData.shared.username ?? "")"
         return label
     }()
     let roundUpLabel: UILabel = {
@@ -67,7 +67,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         label.font = UIFont(name: "Avenir", size: 25)
         label.numberOfLines = 0
         label.textColor = .black
-        label.text = "Hello, Joseph"
+        label.text = "Hello \(UserData.shared.username ?? "")"
         return label
     }()
     
@@ -95,8 +95,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        let rounding = getRounding(uuid: "1")
-        roundUpLabel.text = String(UserData.shared.current_rounding!)
+//        let rounding = getRounding(uuid: "1")
+//        roundUpLabel.text = String(UserData.shared.current_rounding!)
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.hidesBottomBarWhenPushed = true

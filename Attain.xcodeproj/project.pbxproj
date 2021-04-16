@@ -29,6 +29,13 @@
 		5DF76F322624CAFB00C062C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F312624CAFB00C062C1 /* MainViewController.swift */; };
 		5DF76F372626688F00C062C1 /* LiabilitiesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */; };
 		5DF76F442626D04700C062C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76F432626D04700C062C1 /* BaseViewController.swift */; };
+		6D3A3B91262958C300EE4FBB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3B8B262958C300EE4FBB /* SignUpViewController.swift */; };
+		6D3A3B92262958C300EE4FBB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3B8C262958C300EE4FBB /* StartViewController.swift */; };
+		6D3A3B93262958C300EE4FBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3B8D262958C300EE4FBB /* LoginViewController.swift */; };
+		6D3A3B94262958C300EE4FBB /* HalfSizePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3B8F262958C300EE4FBB /* HalfSizePresentationController.swift */; };
+		6D3A3B95262958C300EE4FBB /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3B90262958C300EE4FBB /* UITextFieldPadding.swift */; };
+		6D3A3B9A26295B6D00EE4FBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A3B9926295B6D00EE4FBB /* GoogleService-Info.plist */; };
+		6D3A3BB926295F8200EE4FBB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3BB826295F8200EE4FBB /* Utilities.swift */; };
 		88634F049ED50CC248A9C267 /* Pods_Attain_AttainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74FEC86A2A8E0AAC5BC3652 /* Pods_Attain_AttainUITests.framework */; };
 		8B810E4105D838224F0E049A /* Pods_Attain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C903686A61C7C2B170ADDDA /* Pods_Attain.framework */; };
 		C96516DCDDF2804995E4EF1E /* Pods_AttainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F999D0F5A55E7A653F6BD6 /* Pods_AttainTests.framework */; };
@@ -85,6 +92,13 @@
 		5DF76F312624CAFB00C062C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilitiesWebViewController.swift; sourceTree = "<group>"; };
 		5DF76F432626D04700C062C1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6D3A3B8B262958C300EE4FBB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6D3A3B8C262958C300EE4FBB /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6D3A3B8D262958C300EE4FBB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6D3A3B8F262958C300EE4FBB /* HalfSizePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSizePresentationController.swift; sourceTree = "<group>"; };
+		6D3A3B90262958C300EE4FBB /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
+		6D3A3B9926295B6D00EE4FBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D3A3BB826295F8200EE4FBB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9C903686A61C7C2B170ADDDA /* Pods_Attain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB908EAA9E53052C4BF0F07F /* Pods-Attain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain.release.xcconfig"; path = "Target Support Files/Pods-Attain/Pods-Attain.release.xcconfig"; sourceTree = "<group>"; };
 		E74FEC86A2A8E0AAC5BC3652 /* Pods_Attain_AttainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attain_AttainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,8 +158,9 @@
 		5DF76E982620566600C062C1 /* Attain */ = {
 			isa = PBXGroup;
 			children = (
-				5DF76E992620566600C062C1 /* AppDelegate.swift */,
 				5DF76E9B2620566600C062C1 /* SceneDelegate.swift */,
+				5DF76E992620566600C062C1 /* AppDelegate.swift */,
+				6D3A3BB826295F8200EE4FBB /* Utilities.swift */,
 				5DF76F482628F1F200C062C1 /* Onboard */,
 				5DF76F502628F23900C062C1 /* Main */,
 				5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */,
@@ -157,6 +172,8 @@
 				5DF76EA22620566800C062C1 /* Assets.xcassets */,
 				5DF76EA42620566800C062C1 /* LaunchScreen.storyboard */,
 				5DF76EA72620566800C062C1 /* Info.plist */,
+				6D3A3B9926295B6D00EE4FBB /* GoogleService-Info.plist */,
+				6D3A3B88262958C300EE4FBB /* Login */,
 			);
 			path = Attain;
 			sourceTree = "<group>";
@@ -238,6 +255,42 @@
 				2456B65CF3B6CF4F17A10B3D /* Pods-AttainTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D3A3B88262958C300EE4FBB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A3B89262958C300EE4FBB /* Models */,
+				6D3A3B8A262958C300EE4FBB /* ViewControllers */,
+				6D3A3B8E262958C300EE4FBB /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6D3A3B89262958C300EE4FBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D3A3B8A262958C300EE4FBB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A3B8B262958C300EE4FBB /* SignUpViewController.swift */,
+				6D3A3B8C262958C300EE4FBB /* StartViewController.swift */,
+				6D3A3B8D262958C300EE4FBB /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6D3A3B8E262958C300EE4FBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A3B8F262958C300EE4FBB /* HalfSizePresentationController.swift */,
+				6D3A3B90262958C300EE4FBB /* UITextFieldPadding.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FFAF947DFF96F531A16E7C82 /* Frameworks */ = {
@@ -359,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF76EA62620566800C062C1 /* LaunchScreen.storyboard in Resources */,
+				6D3A3B9A26295B6D00EE4FBB /* GoogleService-Info.plist in Resources */,
 				5DF76EA32620566800C062C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,17 +541,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3A3B93262958C300EE4FBB /* LoginViewController.swift in Sources */,
 				5DF76F232623C8E500C062C1 /* BankAccountView.swift in Sources */,
 				5DF76E9E2620566600C062C1 /* OnboardAddAccountViewController.swift in Sources */,
 				5DF76F2D262493A300C062C1 /* UserData.swift in Sources */,
 				5DF76EEF262075BF00C062C1 /* AddLoanCell.swift in Sources */,
 				5DF76F442626D04700C062C1 /* BaseViewController.swift in Sources */,
+				6D3A3BB926295F8200EE4FBB /* Utilities.swift in Sources */,
+				6D3A3B92262958C300EE4FBB /* StartViewController.swift in Sources */,
+				6D3A3B94262958C300EE4FBB /* HalfSizePresentationController.swift in Sources */,
 				5DF76F072623B67800C062C1 /* NetworkRequests.swift in Sources */,
 				5DF76F022623B64900C062C1 /* PlaidExtension.swift in Sources */,
+				6D3A3B91262958C300EE4FBB /* SignUpViewController.swift in Sources */,
 				5DF76ED826206AAD00C062C1 /* ViewUtils.swift in Sources */,
 				5DF76F372626688F00C062C1 /* LiabilitiesWebViewController.swift in Sources */,
 				5DF76F322624CAFB00C062C1 /* MainViewController.swift in Sources */,
 				5DF76EE226206E9100C062C1 /* OnboardAddLoansViewController.swift in Sources */,
+				6D3A3B95262958C300EE4FBB /* UITextFieldPadding.swift in Sources */,
 				5DF76E9A2620566600C062C1 /* AppDelegate.swift in Sources */,
 				5DF76EFD26207F7800C062C1 /* OnboardSettingsViewController.swift in Sources */,
 				5DF76EEA2620730000C062C1 /* AddLoansCollectionView.swift in Sources */,
@@ -674,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TD6K89778;
+				DEVELOPMENT_TEAM = 4N6QJA9PG6;
 				INFOPLIST_FILE = Attain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -694,7 +754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TD6K89778;
+				DEVELOPMENT_TEAM = 4N6QJA9PG6;
 				INFOPLIST_FILE = Attain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

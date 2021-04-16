@@ -8,6 +8,13 @@ target 'Attain' do
   # Pods for Attain
   pod 'Plaid'
 
+  # Pods for Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/DynamicLinks'
+
   target 'AttainTests' do
     inherit! :search_paths
     # Pods for testing
