@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>50651871495-s08f37berasnt91a015209ic9ust1m0k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.50651871495-s08f37berasnt91a015209ic9ust1m0k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_N45Ko_XLzNXH7vVQkD7vbciy-WBYBdI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>50651871495</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.attain.app.Attain</string>
+	<key>PROJECT_ID</key>
+	<string>attain-7d571</string>
+	<key>STORAGE_BUCKET</key>
+	<string>attain-7d571.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:50651871495:ios:725671d1f6a14606b2eda2</string>
+</dict>
+</plist>
