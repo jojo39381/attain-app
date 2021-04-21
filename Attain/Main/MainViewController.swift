@@ -80,10 +80,20 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }()
     
-   
+    let logoutButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("logout", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
+        return button
+    }()
     
     
-   
+    @objc func logoutTapped() {
+        try! auth.signOut()
+        self.view.window?.rootViewController = StartViewController()
+        self.view.window?.makeKeyAndVisible()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -104,9 +114,11 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         view.addSubview(logoLabel)
         view.addSubview(greetingLabel)
         view.addSubview(roundUpLabel)
+        view.addSubview(logoutButton)
         logoLabel.anchor(top: view.topAnchor, left: view.leadingAnchor, bottom: nil, right: nil, paddingTop: 100, paddingLeft: 25, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         greetingLabel.anchor(top: logoLabel.bottomAnchor, left: view.leadingAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 25, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         roundUpLabel.anchor(top: greetingLabel.bottomAnchor, left: view.leadingAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 25, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        logoutButton.anchor(top: roundUpLabel.bottomAnchor, left: view.leadingAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 25, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
         view.addSubview(accountsCollectionView)
         accountsCollectionView.delegate = self
