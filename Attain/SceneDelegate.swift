@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = StartViewController()
         } else {
             Utilities.fetchProfileData() {
-                self.window?.rootViewController = UINavigationController(rootViewController: MainViewController())
+                self.window?.rootViewController = UINavigationController(rootViewController: OnboardDateOfBirthViewController())
                 self.window?.makeKeyAndVisible()
             }
         }

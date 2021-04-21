@@ -212,8 +212,8 @@ class OnboardAddressViewController : UIViewController {
         guard let userInfo = notification.userInfo else { return }
         var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-
-        scrollView.setContentOffset(CGPoint(x: 0, y: stackView.frame.minY - keyboardFrame.height + 20), animated: true)
+        
+        scrollView.setContentOffset(CGPoint(x: 0, y: keyboardFrame.height - (UIScreen.main.bounds.height - stackView.frame.maxY) + 20), animated: true)
     }
     
     @objc func keyboardWillHide(notification:NSNotification) {
