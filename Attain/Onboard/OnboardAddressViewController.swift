@@ -220,7 +220,6 @@ class OnboardAddressViewController : UIViewController {
         scrollView.setContentOffset(CGPoint(x: 0, y: -91), animated: true)
     }
     
-    
     /*
      // MARK: - Navigation
      
