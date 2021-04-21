@@ -8,13 +8,13 @@
 import LinkKit
 
 extension BaseViewController {
-    func createLiabilitiesLinkTokenConfiguration(type:String) -> LinkTokenConfiguration {
+    func createLiabilitiesLinkTokenConfiguration(category:String) -> LinkTokenConfiguration {
         #warning("Replace <#GENERATED_LINK_TOKEN#> below with your link_token")
         // In your production application replace the hardcoded linkToken below with code that fetches an link_token
         // from your backend server which in turn retrieves it securely from Plaid, for details please refer to
         // https://plaid.com/docs/#create-link-token
 
-        let linkToken:String = getPlaidLiabilitiesToken(type:type)
+        let linkToken:String = getPlaidLiabilitiesToken(type:category)
         
         
         
@@ -25,14 +25,17 @@ extension BaseViewController {
             print("success")
             print("public-token: \(success.publicToken) metadata: \(success.metadata)")
 
-           
-            let temp = saveAccessToken(public_token: success.publicToken)
+            Utilities.fetchAPIKey { (api_key) in
+                let temp = saveAccessToken(type:"liabilities",  uuid:api_key, public_token: success.publicToken)
+                let accountData = getAccountInfo(uuid:api_key)
+                UserData.shared.fundingAccount = accountData
+                UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
+                self.success = true
+               
+            }
             
-            let accountData = getAccountInfo(uuid:"1")
-            UserData.shared.fundingAccount = accountData
-            UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
-            self.success = true
-            self.present(UIViewController(), animated: true, completion: nil)
+            
+           
         }
         linkConfiguration.onExit = { exit in
             if let error = exit.error {
@@ -65,15 +68,19 @@ extension BaseViewController {
         var linkConfiguration = LinkTokenConfiguration(token: linkToken) { success in
             print("success")
             print("public-token: \(success.publicToken) metadata: \(success.metadata)")
-
-           
-            let temp = saveAccessToken(public_token: success.publicToken)
-            
-            let accountData = getAccountInfo(uuid:"1")
-            UserData.shared.fundingAccount = accountData
-            UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
             self.success = true
-            self.present(UIViewController(), animated: true, completion: nil)
+            Utilities.fetchAPIKey { (api_key) in
+                let temp = saveAccessToken(type:"checking", uuid:api_key, public_token: success.publicToken)
+                print(temp)
+                
+                let accountData = getAccountInfo(uuid:api_key
+                )
+                UserData.shared.fundingAccount = accountData
+                UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
+                
+                
+            }
+           
         }
         linkConfiguration.onExit = { exit in
             if let error = exit.error {
@@ -107,9 +114,9 @@ extension BaseViewController {
 
     // MARK: Start Plaid Link using a Link token
     // For details please see https://plaid.com/docs/#create-link-token
-    func presentPlaidLinkUsingLinkToken(type:String) {
+    func presentPlaidLinkUsingLinkToken(category:String) {
         
-        let linkConfiguration = (type == "student_loan") ? createLiabilitiesLinkTokenConfiguration(type:type) : createLinkTokenConfiguration()
+        let linkConfiguration = (category == "credit_card") ? createLiabilitiesLinkTokenConfiguration(category:category) : createLinkTokenConfiguration()
         
      
         let result = Plaid.create(linkConfiguration)
@@ -119,7 +126,7 @@ extension BaseViewController {
         case .success(let handler):
             linkHandler = handler
             let method: PresentationMethod = .custom { (vc) in
-                vc.modalPresentationStyle = .formSheet
+                vc.modalPresentationStyle = .fullScreen
                
                 self.present(vc, animated: true, completion: nil)
             }

@@ -237,8 +237,11 @@ class SignUpViewController: UIViewController {
                                             self.errorLabel.alpha = 1
                                         }
                                         UserData.shared.username = username
+                                        Utilities.fetchAPIKey { (api_key) in
+                                            print(createBrevAccount(uuid: api_key))
+                                        }
                                     }
-                                    self.view.window!.rootViewController = UINavigationController(rootViewController: OnboardAddAccountViewController())
+                                    self.view.window!.rootViewController = UINavigationController(rootViewController: OnboardDateOfBirthViewController())
                                     self.view.window?.makeKeyAndVisible()
                                 }
                             }

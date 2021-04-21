@@ -32,12 +32,10 @@ class OnboardSettingsViewController: UIViewController {
 
     
     @objc func goToNextForm() {
-        let nextView = MainViewController()
-
-
-
-
-        self.navigationController?.pushViewController(nextView, animated: true)
+        Utilities.fetchAPIKey { (api_key) in
+            initiateScheduledRounding(uuid: api_key)
+        }
+        
     }
     
     

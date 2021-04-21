@@ -19,6 +19,7 @@ class OnboardAddAccountViewController: BaseViewController {
 
     
     @objc func goToNextForm() {
+        print("///")
         let nextView = OnboardLoanTypeViewController()
        
        
@@ -104,7 +105,7 @@ class OnboardAddAccountViewController: BaseViewController {
     }
     
     @objc func addBankAccountButtonPressed() {
-        presentPlaidLinkUsingLinkToken(type:"funding")
+        presentPlaidLinkUsingLinkToken(category:"funding")
     }
     
     

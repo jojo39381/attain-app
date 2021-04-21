@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D01E1E9262BCF1F00613B66 /* OnboardAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01E1E8262BCF1F00613B66 /* OnboardAddressViewController.swift */; };
+		5D01E1F1262D683C00613B66 /* OnboardDateOfBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01E1F0262D683C00613B66 /* OnboardDateOfBirthViewController.swift */; };
 		5DF76E9A2620566600C062C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E992620566600C062C1 /* AppDelegate.swift */; };
 		5DF76E9C2620566600C062C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9B2620566600C062C1 /* SceneDelegate.swift */; };
 		5DF76E9E2620566600C062C1 /* OnboardAddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */; };
@@ -64,6 +66,8 @@
 		2456B65CF3B6CF4F17A10B3D /* Pods-AttainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttainTests.release.xcconfig"; path = "Target Support Files/Pods-AttainTests/Pods-AttainTests.release.xcconfig"; sourceTree = "<group>"; };
 		28C08026272E138A06F80801 /* Pods-Attain-AttainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain-AttainUITests.release.xcconfig"; path = "Target Support Files/Pods-Attain-AttainUITests/Pods-Attain-AttainUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47C4588B3BC6F8AACB11F0F8 /* Pods-Attain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain.debug.xcconfig"; path = "Target Support Files/Pods-Attain/Pods-Attain.debug.xcconfig"; sourceTree = "<group>"; };
+		5D01E1E8262BCF1F00613B66 /* OnboardAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardAddressViewController.swift; sourceTree = "<group>"; };
+		5D01E1F0262D683C00613B66 /* OnboardDateOfBirthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardDateOfBirthViewController.swift; sourceTree = "<group>"; };
 		5DF76E962620566600C062C1 /* Attain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF76E992620566600C062C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF76E9B2620566600C062C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 				5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */,
 				5DF76EFC26207F7800C062C1 /* OnboardSettingsViewController.swift */,
 				5DF76EE126206E9100C062C1 /* OnboardAddLoansViewController.swift */,
+				5D01E1F0262D683C00613B66 /* OnboardDateOfBirthViewController.swift */,
+				5D01E1E8262BCF1F00613B66 /* OnboardAddressViewController.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -553,7 +559,9 @@
 				5DF76F072623B67800C062C1 /* NetworkRequests.swift in Sources */,
 				5DF76F022623B64900C062C1 /* PlaidExtension.swift in Sources */,
 				6D3A3B91262958C300EE4FBB /* SignUpViewController.swift in Sources */,
+				5D01E1F1262D683C00613B66 /* OnboardDateOfBirthViewController.swift in Sources */,
 				5DF76ED826206AAD00C062C1 /* ViewUtils.swift in Sources */,
+				5D01E1E9262BCF1F00613B66 /* OnboardAddressViewController.swift in Sources */,
 				5DF76F372626688F00C062C1 /* LiabilitiesWebViewController.swift in Sources */,
 				5DF76F322624CAFB00C062C1 /* MainViewController.swift in Sources */,
 				5DF76EE226206E9100C062C1 /* OnboardAddLoansViewController.swift in Sources */,
@@ -734,16 +742,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4N6QJA9PG6;
+				DEVELOPMENT_TEAM = 6TD6K89778;
 				INFOPLIST_FILE = Attain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.Attain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.io;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -754,16 +762,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4N6QJA9PG6;
+				DEVELOPMENT_TEAM = 6TD6K89778;
 				INFOPLIST_FILE = Attain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.attain.app.Attain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.attain.io;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

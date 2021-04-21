@@ -9,7 +9,7 @@ import UIKit
 
 class OnboardAddLoansViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, AddLoansCollectionViewCellDelegate {
     func didPressAddLoanCell() {
-        let linkToken = presentPlaidLinkUsingLinkToken(type:"student_loan")
+        let linkToken = presentPlaidLinkUsingLinkToken(category:"credit_card")
         
 //        let webview = LiabilitiesWebViewController(linkToken: linkToken)
 //
