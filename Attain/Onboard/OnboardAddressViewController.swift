@@ -63,53 +63,7 @@ class OnboardAddressViewController : UIViewController {
         
         return tf
     }()
-    
-    
-    //
-    //    let addressTextField: UITextField = {
-    //        let tf = UITextField()
-    //        tf.placeholder = "Password"
-    //        tf.isSecureTextEntry = true
-    //        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-    //        tf.borderStyle = .roundedRect
-    //        tf.font = UIFont.systemFont(ofSize: 14)
-    //        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-    //        return tf
-    //    }()
-    //
-    //    let cityTextField: UITextField = {
-    //        let tf = UITextField()
-    //        tf.placeholder = "Password"
-    //        tf.isSecureTextEntry = true
-    //        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-    //        tf.borderStyle = .roundedRect
-    //        tf.font = UIFont.systemFont(ofSize: 14)
-    //        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-    //        return tf
-    //    }()
-    //
-    //    let stateTextField: UITextField = {
-    //        let tf = UITextField()
-    //        tf.placeholder = "Password"
-    //        tf.isSecureTextEntry = true
-    //        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-    //        tf.borderStyle = .roundedRect
-    //        tf.font = UIFont.systemFont(ofSize: 14)
-    //        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-    //        return tf
-    //    }()
-    //
-    //    let zipcodeTextField: UITextField = {
-    //        let tf = UITextField()
-    //        tf.placeholder = "Password"
-    //        tf.isSecureTextEntry = true
-    //        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-    //        tf.borderStyle = .roundedRect
-    //        tf.font = UIFont.systemFont(ofSize: 14)
-    //        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-    //        return tf
-    //    }()
-    //
+   
     
     
     let zipcodeTextField: UITextField = {

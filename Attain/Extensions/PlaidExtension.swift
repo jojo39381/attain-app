@@ -26,12 +26,22 @@ extension BaseViewController {
             print("public-token: \(success.publicToken) metadata: \(success.metadata)")
 
             Utilities.fetchAPIKey { (api_key) in
-                let temp = saveAccessToken(type:"liabilities",  uuid:api_key, public_token: success.publicToken)
-                let accountData = getAccountInfo(uuid:api_key)
-                UserData.shared.fundingAccount = accountData
-                UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
-                self.success = true
-               
+
+//                let accountData = getAccountInfo(uuid:api_key)
+//                UserData.shared.fundingAccount = accountData
+//                UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
+//                self.success = true
+                
+                
+                let linktoken = getMethodLinkToken(uuid: api_key, ins_id: success.metadata.institution.id, mask: success.metadata.accounts[0].mask!)
+
+                print(success.metadata.institution.id)
+                print(success.metadata.accounts[0].mask!)
+                print(linktoken)
+                let webview = LiabilitiesWebViewController(linkToken: linktoken, publicToken:success.publicToken)
+
+
+                self.present(webview, animated: true, completion: nil)
             }
             
             
@@ -78,9 +88,11 @@ extension BaseViewController {
                 UserData.shared.fundingAccount = accountData
                 UserData.shared.fundingAccount!.bankName = success.metadata.institution.name
                 
-                
+          
             }
-           
+            
+            
+       
         }
         linkConfiguration.onExit = { exit in
             if let error = exit.error {
@@ -127,11 +139,12 @@ extension BaseViewController {
             linkHandler = handler
             let method: PresentationMethod = .custom { (vc) in
                 vc.modalPresentationStyle = .fullScreen
-               
+                
                 self.present(vc, animated: true, completion: nil)
+                
             }
             
-            linkHandler!.open(presentUsing: method)
+            linkHandler!.open(presentUsing:method)
             
            
         }

@@ -89,6 +89,47 @@ func saveAccessToken(type:String, uuid:String, public_token:String) -> String{
     return result
    
 }
+
+func saveLiabilityAccessToken(uuid:String, public_token:String, method_token:String) -> String{
+    let url = URL(string: "https://khchqs4x.brev.dev/api/liabilities_account")!
+    let semaphore = DispatchSemaphore(value: 0)
+    let session = URLSession.shared
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST" //set http method as POST
+    
+
+    let parameters = [
+        "uuid":uuid,
+        "public_token":public_token,
+        "method_token":method_token
+    ] as [String : Any]
+    do {
+        request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+       
+        
+        // pass dictionary to nsdata object and set it as request body
+    } catch let error {
+        print(error.localizedDescription)
+    }
+
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.addValue("application/json", forHTTPHeaderField: "Accept")
+    var result = ""
+    let task = session.dataTask(with: request as URLRequest) {(data, response, error) in
+        guard let data = data else { return }
+        
+        result = String(data: data, encoding: .utf8)!.replacingOccurrences(of: "\"", with: "")
+        print(result)
+        semaphore.signal()
+        
+    }
+   
+    
+    task.resume()
+    semaphore.wait()
+    return result
+   
+}
 func createBrevAccount(uuid:String) -> String{
     
     
@@ -204,27 +245,47 @@ func getRounding(uuid:String) -> RoundingHistory{
 
 
 
-func getMethodLinkToken(entity_id:String) -> String{
+func getMethodLinkToken(uuid:String, ins_id:String, mask:String) -> String{
     
-    var url = URLComponents(string: "https://khchqs4x.brev.dev/api/liabilitiesConfig")!
-    url.queryItems = [
-        URLQueryItem(name: "entity_id", value: entity_id)
-    ]
-    let request = URLRequest(url: url.url!)
+    let url = URL(string: "https://khchqs4x.brev.dev/api/methodConfig")!
     let semaphore = DispatchSemaphore(value: 0)
-    var result:String!
-    let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+    let session = URLSession.shared
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST" //set http method as POST
+   print(uuid)
+
+    let parameters = [
+        "uuid":uuid,
+        "ins_id":ins_id,
+        "mask":mask
+    ] as [String : Any]
+    do {
+        request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+       
+        
+        // pass dictionary to nsdata object and set it as request body
+    } catch let error {
+        print(error.localizedDescription)
+    }
+
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    
+    request.addValue("application/json", forHTTPHeaderField: "Accept")
+    var result = ""
+    let task = session.dataTask(with: request as URLRequest) {(data, response, error) in
         guard let data = data else { return }
         
-       
         result = String(data: data, encoding: .utf8)!.replacingOccurrences(of: "\"", with: "")
-        
+        print("entity " + result)
         semaphore.signal()
         
     }
+   
+    
     task.resume()
     semaphore.wait()
     return result
+   
 }
 
 

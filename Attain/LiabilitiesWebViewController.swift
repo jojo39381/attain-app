@@ -6,8 +6,10 @@ class LiabilitiesWebViewController: UIViewController, WKUIDelegate, WKNavigation
     
    var webView: WKWebView!
     var linkToken:String?
-    init(linkToken: String?) {
+    var publicToken:String?
+    init(linkToken: String?, publicToken: String?) {
         self.linkToken = linkToken
+        self.publicToken = publicToken
         super.init(nibName: nil, bundle: nil)
         }
     
@@ -17,6 +19,7 @@ class LiabilitiesWebViewController: UIViewController, WKUIDelegate, WKNavigation
     override func viewDidLoad() {
       super.viewDidLoad()
       let myURL = URL(string:"https://link.sandbox.methodfi.com?token=\(linkToken!)")
+        print("///")
         print(myURL)
       let myRequest = URLRequest(url: myURL!)
       webView.load(myRequest)
@@ -43,7 +46,15 @@ class LiabilitiesWebViewController: UIViewController, WKUIDelegate, WKNavigation
                 }
                 
                 if eventType == "success" {
-                    self.dismiss(animated: true, completion: nil)
+                    
+                    Utilities.fetchAPIKey { [self] (api_key) in
+                        let method_token = self.getQueryStringParameter(url: url.absoluteString, param: "public_account_token")
+                        
+                        print(method_token)
+                        let temp = saveLiabilityAccessToken(uuid:api_key, public_token: publicToken!, method_token: method_token! )
+                    }
+                    
+                    self.navigationController?.popToRootViewController(animated: true)
                 }
                     decisionHandler(.cancel)
                     return
@@ -52,4 +63,9 @@ class LiabilitiesWebViewController: UIViewController, WKUIDelegate, WKNavigation
 
             decisionHandler(.allow)
         }
+    func getQueryStringParameter(url: String, param: String) -> String? {
+      guard let url = URLComponents(string: url) else { return nil }
+      return url.queryItems?.first(where: { $0.name == param })?.value
+    }
 }
+
