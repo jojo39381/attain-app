@@ -35,7 +35,8 @@ class OnboardSettingsViewController: UIViewController {
         Utilities.fetchAPIKey { (api_key) in
             initiateScheduledRounding(uuid: api_key)
         }
-        
+        let vc = MainViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

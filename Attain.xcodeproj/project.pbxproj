@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D01E1E9262BCF1F00613B66 /* OnboardAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01E1E8262BCF1F00613B66 /* OnboardAddressViewController.swift */; };
 		5D01E1F1262D683C00613B66 /* OnboardDateOfBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01E1F0262D683C00613B66 /* OnboardDateOfBirthViewController.swift */; };
+		5DD1E6E42631006300267BB6 /* LiabilitiesPlaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1E6E32631006300267BB6 /* LiabilitiesPlaidViewController.swift */; };
 		5DF76E9A2620566600C062C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E992620566600C062C1 /* AppDelegate.swift */; };
 		5DF76E9C2620566600C062C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9B2620566600C062C1 /* SceneDelegate.swift */; };
 		5DF76E9E2620566600C062C1 /* OnboardAddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E9D2620566600C062C1 /* OnboardAddAccountViewController.swift */; };
@@ -68,6 +69,7 @@
 		47C4588B3BC6F8AACB11F0F8 /* Pods-Attain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attain.debug.xcconfig"; path = "Target Support Files/Pods-Attain/Pods-Attain.debug.xcconfig"; sourceTree = "<group>"; };
 		5D01E1E8262BCF1F00613B66 /* OnboardAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardAddressViewController.swift; sourceTree = "<group>"; };
 		5D01E1F0262D683C00613B66 /* OnboardDateOfBirthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardDateOfBirthViewController.swift; sourceTree = "<group>"; };
+		5DD1E6E32631006300267BB6 /* LiabilitiesPlaidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilitiesPlaidViewController.swift; sourceTree = "<group>"; };
 		5DF76E962620566600C062C1 /* Attain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF76E992620566600C062C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF76E9B2620566600C062C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				5DF76F482628F1F200C062C1 /* Onboard */,
 				5DF76F502628F23900C062C1 /* Main */,
 				5DF76F362626688F00C062C1 /* LiabilitiesWebViewController.swift */,
+				5DD1E6E32631006300267BB6 /* LiabilitiesPlaidViewController.swift */,
 				5DF76F512628F24600C062C1 /* Data */,
 				5DF76F2726248E2E00C062C1 /* JsonClasses.swift */,
 				5DF76F522628F25E00C062C1 /* Extensions */,
@@ -571,6 +574,7 @@
 				5DF76EEA2620730000C062C1 /* AddLoansCollectionView.swift in Sources */,
 				5DF76F2826248E2E00C062C1 /* JsonClasses.swift in Sources */,
 				5DF76E9C2620566600C062C1 /* SceneDelegate.swift in Sources */,
+				5DD1E6E42631006300267BB6 /* LiabilitiesPlaidViewController.swift in Sources */,
 				5DF76ED3262062CB00C062C1 /* Extensions.swift in Sources */,
 				5DF76EDD26206B0400C062C1 /* OnboardLoanTypeViewController.swift in Sources */,
 			);

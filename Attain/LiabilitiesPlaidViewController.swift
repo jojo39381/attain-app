@@ -7,7 +7,7 @@
 
 import UIKit
 import LinkKit
-class OnboardAddAccountViewController: BaseViewController {
+class LiabilitiesPlaidViewController: BaseViewController {
    
     var greetingLabel: UILabel!
     var nextButton: UIButton!
@@ -36,32 +36,14 @@ class OnboardAddAccountViewController: BaseViewController {
         
        
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-       
-        setupGreetingLabel()
-        setupInstructionLabels()
-        setupAddBankAccountButton()
-        setupNextButton()
+        print("asdasdasd")
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        if success {
-            addBankAccountButton.removeFromSuperview()
-            bankAccountView = BankAccountView()
-            
-            
-            
-            
-            
-            view.addSubview(bankAccountView)
-            
-            bankAccountView.anchor(top: detailedInstructionLabel.bottomAnchor, left: view.leadingAnchor, bottom: nil, right: view.trailingAnchor, paddingTop: 30, paddingLeft: 50, paddingBottom: 0, paddingRight: -50, width: 0, height: 80)
-            
-            view.addSubview(addBankAccountButton)
-            addBankAccountButton.anchor(top:  bankAccountView.bottomAnchor, left: view.leadingAnchor    , bottom: nil, right: view.trailingAnchor, paddingTop: 30, paddingLeft: 50, paddingBottom: 0, paddingRight: -50, width: 0, height: 50)
-            addBankAccountButton.setTitle("Change Bank Account", for: .normal)
-        }
+        presentPlaidLinkUsingLinkToken(category: "funding")
         
         
     }
@@ -106,9 +88,6 @@ class OnboardAddAccountViewController: BaseViewController {
     
     @objc func addBankAccountButtonPressed() {
         presentPlaidLinkUsingLinkToken(category:"funding")
-//        let vc = LiabilitiesPlaidViewController()
-//        
-//        self.present(vc, animated: true, completion: nil)
     }
     
     
